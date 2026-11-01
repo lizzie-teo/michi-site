@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michi Terms and Conditions</title>
+<!--
+  Michi's terms and conditions, from the lawyer's Word document. The words are the
+  lawyer's. Only the layout is ours. The theme matches the other pages.
+
+  Placeholders still to fill are marked <mark class="todo">. Search for
+  "todo" before publishing.
+-->
+<style>
+  :root {
+    --canvas: #F6F1E2;
+    --surface: #FFFFFF;
+    --surface-muted: #E2E8D6;
+    --border: #E0DBC6;
+    --hairline: #ECE7D4;
+    --ink: #2C3324;
+    --caption: #4A5440;
+    --accent: #3D5232;
+    --on-accent: #F6F1E2;
+    --open: #7C5A1F;
+    --open-wash: #F3EAD6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --canvas: #1B2418;
+      --surface: #232E1E;
+      --surface-muted: #2E3B27;
+      --border: #3B4D33;
+      --hairline: #2E3B27;
+      --ink: #F2ECD9;
+      --caption: #CBD6BD;
+      --accent: #B6C795;
+      --on-accent: #1B2418;
+      --open: #D3A863;
+      --open-wash: #33301F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --canvas: #1B2418;
+    --surface: #232E1E;
+    --surface-muted: #2E3B27;
+    --border: #3B4D33;
+    --hairline: #2E3B27;
+    --ink: #F2ECD9;
+    --caption: #CBD6BD;
+    --accent: #B6C795;
+    --on-accent: #1B2418;
+    --open: #D3A863;
+    --open-wash: #33301F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 16px 64px;
+  }
+
+  header { margin-bottom: 32px; }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .meta li {
+    background: var(--surface-muted);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .meta .status { background: var(--accent); color: var(--on-accent); }
+
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 20px 0 8px;
+  }
+
+  h3:first-of-type { margin-top: 0; }
+
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .caption { color: var(--caption); font-size: 15px; }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 2px;
+  }
+
+  .open-block {
+    background: var(--open-wash);
+    border-color: var(--open);
+  }
+
+  ul.plain, ol.plain { margin: 0 0 12px; padding-left: 20px; }
+  ul.plain:last-child, ol.plain:last-child { margin-bottom: 0; }
+  ul.plain li, ol.plain li { margin-bottom: 4px; }
+
+  ol.contents {
+    margin: 0;
+    padding-left: 24px;
+    columns: 2 220px;
+    column-gap: 24px;
+  }
+
+  ol.contents li { margin-bottom: 4px; break-inside: avoid; }
+
+  mark.todo {
+    background: var(--open-wash);
+    color: var(--open);
+    border: 1px dashed var(--open);
+    border-radius: 4px;
+    padding: 0 4px;
+    font-weight: 600;
+  }
+
+  h4 { font-size: 16px; margin: 16px 0 8px; color: var(--caption); }
+
+  p.cl {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 4px;
+  }
+  p.cl.l5 { padding-left: 36px; }
+  p.cl .n { color: var(--caption); }
+  p.ind { padding-left: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 8px 12px 8px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  th { font-weight: 600; }
+  tr:last-child td, tr:last-child th { border-bottom: none; }
+
+  .table-wrap { overflow-x: auto; margin-bottom: 12px; }
+  .table-wrap:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Michi terms and conditions</h1>
+    <p class="caption">The agreement between you and us for using the Michi app.</p>
+    <ul class="meta">
+      <li class="status">Draft</li>
+      <li>Last updated <mark class="todo">[insert]</mark></li>
+      <li>New South Wales law</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Contents</h2>
+    <ol class="contents">
+      <li><a href="#c1">Reading and accepting these terms</a></li>
+      <li><a href="#c2">Eligibility</a></li>
+      <li><a href="#c3">Duration of your subscription</a></li>
+      <li><a href="#c4">The software</a></li>
+      <li><a href="#c5">Data hosting</a></li>
+      <li><a href="#c6">Client obligations</a></li>
+      <li><a href="#c7">Fees and payment</a></li>
+      <li><a href="#c8">Intellectual property and data</a></li>
+      <li><a href="#c9">Confidentiality</a></li>
+      <li><a href="#c10">Privacy</a></li>
+      <li><a href="#c11">Liability</a></li>
+      <li><a href="#c12">Upgrade and downgrades</a></li>
+      <li><a href="#c13">Cancellation</a></li>
+      <li><a href="#c14">Dispute resolution</a></li>
+      <li><a href="#c15">Force majeure</a></li>
+      <li><a href="#c16">Notices</a></li>
+      <li><a href="#c17">General</a></li>
+      <li><a href="#definitions">Definitions</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <p>We are <mark class="todo">[Insert Client Name]</mark>, an Australian business with <mark class="todo">[ABN No.]</mark> (‘<strong>we’, ‘our’ </strong>or<strong> ‘us’</strong>) and we provide innovative solutions to empower individuals, families and care teams (‘<strong>you’, ‘your’</strong>) to manage health and wellbeing with ease (<strong>Services</strong>). Our solutions include the Michi mobile application (App) for streamlined multi-disciplinary care, as described on our Website (<strong>Software</strong>).</p>
+    <p>These terms and conditions (<strong>Terms</strong>) govern your access to and use of the Software and any other goods and services provided by us as set out in these Terms. You can view the most updated version of our Terms at <a href="https://michifriend.com/terms/">https://michifriend.com/terms/</a> (<strong>Website</strong>). Please read these terms and conditions carefully.</p>
+    <p>The App is available for download through the Apple App Store or Google Play Store for a one-time purchase price as displayed on the relevant store at the time of purchase (Purchase Price). By purchasing the App, you receive access to the following features:</p>
+    <p><mark class="todo">[list the features]</mark></p>
+    <p>The Purchase Price is charged to the payment method linked to your Apple App Store or Google Play Store account at the time you download the App. No further payments are required unless you choose to purchase additional features or services offered within the App.</p>
+    <p>Additional features or services may be available for purchase within the App from time to time.</p>
+    <p><strong>Your licence to use the App commences on the date you purchase and download the App. Your access will continue for as long as the App remains available and supported, subject to these Terms, unless terminated earlier in accordance with clause 13.</strong></p>
+  </section>
+  <section id="c1">
+    <h2>1. Reading and accepting these terms</h2>
+    <p class="cl"><span class="n">(a)</span><span>In these Terms, capitalised words and phrases have the meanings given to them where they are followed by bolded brackets, or as set out in the Definitions table at the end of these Terms.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>By clicking the “I accept these Terms” button in our App, paying for your Subscription or otherwise accepting the benefit of any part of your Subscription, you agree to be bound by these Terms which form a binding contractual agreement between you, the person acquiring a Subscription or the company you represent and are acquiring the Subscription on behalf of, (<strong>‘you’</strong> or<strong> ‘your’</strong>) and us.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>We may change these Terms from time to time by notifying you at least 30 days in advance of any material changes. If you do not agree with the amended Terms, you may terminate this agreement by ceasing to use the App within that notice period. Your continued use of the App following such notice period will represent an agreement by you to be bound by the Terms as amended.</span></p>
+  </section>
+  <section id="c2">
+    <h2>2. Eligibility</h2>
+    <p class="cl"><span class="n">(a)</span><span>By accepting these Terms, you represent and warrant that:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>you have the legal capacity and authority to enter into a binding contract with us; and</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>you are authorised to use the payment you provided when purchasing a Subscription.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>The Software is not intended for unsupervised use by any person under the age of 18 or any person who has previously been suspended or prohibited from using the Software. By using the Software, you represent and warrant that you are either:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>over the age of 18 years and accessing the Software for personal or commercial use; or</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>accessing the Software on behalf of someone under the age of 18 years old and consent to that person’s use of the Software.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>Please do not access the Software if you are under the age of 18 and do not have your parent or guardian’s consent, if you are under 16 or if you have previously been suspended or prohibited from using the Software.</span></p>
+  </section>
+  <section id="c3">
+    <h2>3. Duration of your subscription</h2>
+    <p class="cl"><span class="n">(a)</span><span>Your licence to use the App and these Terms commence on the date you purchase and download the App (as set out at the beginning of these Terms) and continue until terminated in accordance with clause 13 (Term).</span></p>
+    <p class="cl"><span class="n">(b)</span><span>Your licence to use the App continues indefinitely from the date of purchase, subject to these Terms and unless terminated in accordance with clause 13.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>Either party may terminate this agreement at any time in accordance with clause 13.</span></p>
+    <p class="cl"><span class="n">(d)</span><span>We may from time to time update the Software, including adding new features or in-app purchase options. We will provide you with reasonable notice of any material changes to the App or these Terms.</span></p>
+  </section>
+  <section id="c4">
+    <h2>4. The software</h2>
+    <h3>4.1 Scope of your subscription and the software</h3>
+    <p class="cl"><span class="n">(a)</span><span>We will provide you, to the extent described in the Software and the Documentation (<strong>Software</strong>).</span></p>
+    <p class="cl"><span class="n">(b)</span><span>Your access includes the benefits and limitations of the App as set out on our sign up form, on our Website, or as otherwise communicated to you when you downloaded the App (and as amended from time to time by notice to you).</span></p>
+    <h3>4.2 Accounts</h3>
+    <p class="cl"><span class="n">(a)</span><span>(<strong>Accounts</strong>) To use the Software, you may be required to sign up, register and receive an account through the App (an <strong>Account</strong>).</span></p>
+    <p class="cl"><span class="n">(b)</span><span>(<strong>Acceptance</strong>) Once you complete the account registration process, we may, in our absolute discretion, choose to accept you as a registered user of the App and provide you with an Account.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>(<strong>Provide Information</strong>) As part of the Account registration process and as part of your continued use of the Software, you may be required to provide personal information and details, such as your email address, first and last name, preferred username, a secure password, billing, postal and physical addresses, mobile phone number, photos and video, audio files, profile information, payment details, ratings and reviews, verified identifications, verified certifications and authentication, and other information as determined by us from time to time.</span></p>
+    <p class="cl"><span class="n">(d)</span><span>(<strong>Verification</strong>) In the course of setting up your Account, we may be required to verify your:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>payment details;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>identity, with reference to your driver’s licence, passport, and/or valid identity card.</span></p>
+    <p class="ind">We will only use your payment details for the purpose of verifying your identity to set up your Account. Payments are processed by the Apple App Store or Google Play Store and we will not store your payment information.</p>
+    <p class="cl"><span class="n">(e)</span><span>(<strong>Warranty</strong>) You warrant that any information you give to us in the course of creating an Account or adding a User will always be accurate, honest, correct and up-to-date.</span></p>
+    <p class="cl"><span class="n">(f)</span><span>(<strong>Security</strong>) You are responsible for managing your Account. You must immediately notify us of any unauthorised use of your profile, password or email, or any other breach or potential breach of the Software’s security.</span></p>
+    <p class="cl"><span class="n">(g)</span><span>(<strong>Cancellation</strong>) We may, in our reasonable discretion, cancel any Account or suspend a User’s access for breach of these Terms or where required by law. Where we cancel your Account other than for your breach of these Terms, you may be entitled to a refund in accordance with applicable law.</span></p>
+    <h3>4.3 Disclaimer</h3>
+    <p class="ind">You acknowledge and agree that:</p>
+    <p class="cl"><span class="n">(a)</span><span>The Software is designed to support your personal health management by offering features such as medication reminders, symptom tracking, and the ability to share health data with healthcare professionals. It is intended to serve as a general assistance tool and should not be relied upon as a sole source of medical information or advice.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>While the Software can help you stay organised and informed, it does not provide medical advice, diagnosis, or treatment. All health-related decisions should be made in consultation with a qualified healthcare professional. Always follow the guidance of your doctor, pharmacist, or specialist regarding medications, treatment plans, and symptom evaluation.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>The Software features - such as notifications, reminders, and summaries - are provided for your convenience and are not guaranteed to be complete, accurate, or error-free. You are responsible for:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>Ensuring the correctness of the data you input (e.g. medication names, dosages, times).</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>Monitoring your symptoms in consultation with a professional.</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>Confirming that any shared data is received and interpreted by your healthcare provider appropriately.</span></p>
+    <p class="cl"><span class="n">(d)</span><span>The Software is not a replacement for medical appointments, emergency services, or urgent care. If you are experiencing a medical emergency, call 000 or seek immediate medical attention; and</span></p>
+    <p class="cl"><span class="n">(e)</span><span>Any information provided by us to you as part of or in connection with the Software or the Services is general in nature, may not be suitable for your circumstances and does not constitute financial, legal, health or any other kind of professional advice.</span></p>
+    <h3>4.4 Software</h3>
+    <p class="cl"><span class="n">(a)</span><span>While your access to the Software is maintained, we grant to you a non-exclusive, non-transferable licence to use the Software and Documentation limited to one User (i.e., the Number of Software Users will be one).</span></p>
+    <p class="cl"><span class="n">(b)</span><span>We may from time to time, in our absolute discretion, release enhancements to the Software, meaning an upgraded, improved, modified or new version of the Software (<strong>Enhancements</strong>). Any Enhancements to the Software will not limit or otherwise affect these Terms. Enhancements may cause downtime or delays from time to time, and credits will not be provided for such downtime.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>We may change features of the Software from time to time. We will use reasonable endeavours to notify you of any material changes to the Software’s features.</span></p>
+    <h3>4.5 Third party software, terms and conditions</h3>
+    <p class="cl"><span class="n">(a)</span><span>You acknowledge and agree that third party terms &amp; conditions (<strong>Third Party Terms</strong>) may apply to your use of the Software, including:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>Apple (App Store) for App distribution and subscription payments;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>Google Play Store for App distribution and subscription payments;</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>Supabase for data hosting;</span></p>
+    <p class="ind">as updated from time to time.</p>
+    <p class="cl"><span class="n">(b)</span><span>You agree to any Third Party Terms applicable to any third party goods and services that are used in providing the Software, and we will not be liable for any loss or damage suffered by you in connection with such Third Party Terms.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>Without limiting clause 4.5(b), we will take reasonable steps to notify you of Third Party Terms.</span></p>
+    <p class="cl"><span class="n">(d)</span><span>You have the right to reject any Third Party Terms. If you reject the Third Party Terms, we cannot provide the Software to you and clause 13 will apply.</span></p>
+    <h3>4.6 Third party software integrations</h3>
+    <p class="cl"><span class="n">(a)</span><span>You acknowledge and agree that issues can arise when data is uploaded to software, when data is transferred between different software programs, and when different software programs are integrated together. We cannot guarantee that integration processes between the Software and other software programs will be free from errors, defects or delay.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>You agree that we will not be liable for the functionality of any third party goods or services, including any third party software, or for the functionality of the Software if you integrate it with third party software, or change or augment the Software, including by making additions or changes to the Software code, and including by incorporating APIs into the Software.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>If you add third party software or software code to the Software, integrate the Software with third party software, or make any other changes to the Software, including the Software code (<strong>User Software Changes</strong>), then:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>you acknowledge and agree that User Software Changes can have adverse effects on the Software;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>you will indemnify us in relation to any loss or damage that arises in connection with the User Software Changes;</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>we will not be liable for any failure in the Software, to the extent such failure is caused or contributed to by a User Software Change;</span></p>
+    <p class="cl l5"><span class="n">(iv)</span><span>we may require you to change or remove User Software Changes, at our discretion, and if we do so, you must act promptly;</span></p>
+    <p class="cl l5"><span class="n">(v)</span><span>we may suspend your access to the Software until you have changed or removed User Software Change; and/or</span></p>
+    <p class="cl l5"><span class="n">(vi)</span><span>we may change or remove any User Software Change, in our absolute discretion. We will not be liable for loss of data or any other loss or damage you may suffer in relation to our amendment to, or removal of, any User Software Change.</span></p>
+    <h3>4.7 Subcontracting</h3>
+    <p class="ind">We may subcontract any aspect of providing the Services and Software, and you consent to such subcontracting.</p>
+    <h3>4.8 Support services</h3>
+    <p class="ind">We will provide general support where reasonably necessary to resolve technical issues with the Software (<strong>Support Services</strong>). Unless otherwise agreed in writing:</p>
+    <p class="cl"><span class="n">(a)</span><span>we will take reasonable steps to provide Support Services where necessary (you must first endeavour to resolve any issues with the Software internally and we will not assist with issues that are beyond our reasonable control);</span></p>
+    <p class="cl"><span class="n">(b)</span><span>we will use our best endeavours to respond to requests for Support Services and you acknowledge that we may not be available 24/7 or respond within a particular time frame;</span></p>
+    <p class="cl"><span class="n">(c)</span><span>you are responsible for all internal administration and managing access, including storing back-up passwords and assisting your Users to access and use the Software; and</span></p>
+    <p class="cl"><span class="n">(d)</span><span>you will not have any claim for delay to your access to the Software due to any reasonable failure or delay in Support Services, provided we are using reasonable endeavours to resolve the issue.</span></p>
+  </section>
+  <section id="c5">
+    <h2>5. Data hosting</h2>
+    <p class="ind">We will store User Data you upload to the Software using a third party hosting service selected by us (<strong>Hosting Services</strong>), subject to the following terms:</p>
+    <p class="cl"><span class="n">(a)</span><span>(<strong>hosting location</strong>) You acknowledge and agree that we may use storage servers to host the Software through cloud-based services. Where data is stored outside Australia, we will take reasonable steps to ensure that overseas recipients of your personal information handle it in accordance with the Australian Privacy Principles and applicable health records legislation.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>(<strong>service quality</strong>) While we will use reasonable efforts to select an appropriate hosting provider, we do not guarantee that the Hosting Services will be free from errors or defects or that User Data will be accessible or available at all times.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>(<strong>security</strong>) We will use our best efforts to ensure that User Data is stored securely. However, to the maximum extent permitted by law, we do not accept responsibility or liability for any unauthorised use, destruction, loss, damage or alteration to User Data, including due to hacking, malware, ransomware, viruses, malicious computer code or other forms of interference, except to the extent caused by our failure to take reasonable steps to protect your data as required by applicable law.</span></p>
+    <p class="cl"><span class="n">(d)</span><span>(<strong>backups &amp; disaster recovery</strong>) In the event that User Data is lost due to a system failure (e.g. a database or webserver crash), we cannot guarantee that any backup will be available, or if available that such a backup will be free from errors or defects. We encourage all Users and Account holders to ensure they always backup data entered in the Software in another location on a regular basis.</span></p>
+  </section>
+  <section id="c6">
+    <h2>6. Client obligations</h2>
+    <p class="ind">You agree to:</p>
+    <p class="cl"><span class="n">(a)</span><span>provide us with all documentation, information and assistance reasonably required by us to perform the Services; and</span></p>
+    <p class="cl"><span class="n">(b)</span><span>provide us with access to any third party or other accounts used by you (including log-in details and passwords), as is reasonably required by us to perform the Services.</span></p>
+    <h3>6.1 Client material</h3>
+    <p class="cl"><span class="n">(a)</span><span>You warrant that all information, documentation and other Material you provide to us for the purpose of receiving the Software is complete, accurate and up-to-date.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>You release us from liability in relation to any loss or damage arising out of or in connection with the Software, to the extent such loss or damage is directly caused by information, documentation or any other Material provided by you being incomplete, inaccurate or out-of-date.</span></p>
+    <h3>6.2 Your obligations</h3>
+    <p class="cl"><span class="n">(a)</span><span><strong>You must, and must ensure that all Users, comply with these Terms at all times.</strong> You acknowledge and agree that we will have no liability in respect of any damage, loss or expense which arises directly from your, or any User’s, breach of these Terms, and you indemnify us in respect of any such damage, loss or expense, to the extent caused by your or their breach.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>You must not, and must not encourage or permit any User, Personnel or any third party to, without our prior written approval:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>upload commercial secrets, or sensitive information of any person other than you or a User who has consented, using the Software;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>upload any inappropriate, offensive, illicit, illegal, pornographic, sexist, homophobic or racist material using the Software;</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>upload any material that is owned or copyrighted by a third party;</span></p>
+    <p class="cl l5"><span class="n">(iv)</span><span>make copies of the Documentation or the Software;</span></p>
+    <p class="cl l5"><span class="n">(v)</span><span>adapt, modify or tamper in any way with the Software;</span></p>
+    <p class="cl l5"><span class="n">(vi)</span><span>remove or alter any copyright, trade mark or other notice on or forming part of the Software or Documentation;</span></p>
+    <p class="cl l5"><span class="n">(vii)</span><span>act in any way that may harm our reputation or that of associated or interested parties or do anything at all contrary to the interests of us or the Software;</span></p>
+    <p class="cl l5"><span class="n">(viii)</span><span>use the Software in a way which infringes the Intellectual Property Rights of any third party;</span></p>
+    <p class="cl l5"><span class="n">(ix)</span><span>create derivative works from or translate the Software or Documentation;</span></p>
+    <p class="cl l5"><span class="n">(x)</span><span>publish or otherwise communicate the Software or Documentation to the public, including by making it available online or sharing it with third parties;</span></p>
+    <p class="cl l5"><span class="n">(xi)</span><span>integrate the Software with third party data or Software, or make additions or changes to the Software (including by incorporating APIs into the Software) other than integrating in accordance with any Documentation or instructions provided by us in writing;</span></p>
+    <p class="cl l5"><span class="n">(xii)</span><span>intimidate, harass, impersonate, stalk, threaten, bully or endanger any other User or distribute unsolicited commercial content, junk mail, spam, bulk content or harassment in connection with the Software;</span></p>
+    <p class="cl l5"><span class="n">(xiii)</span><span>sell, loan, transfer, sub-licence, hire or otherwise dispose of the Software or Documentation to any third party, other than granting a User access as permitted under these Terms;</span></p>
+    <p class="cl l5"><span class="n">(xiv)</span><span>decompile or reverse engineer the Software or any part of it, or otherwise attempt to derive its source code;</span></p>
+    <p class="cl l5"><span class="n">(xv)</span><span>share your Account or Account information, including log in details or passwords, with any other person and acknowledge that any use of your Account by any person who is not the account holder is strictly prohibited. You must immediately notify us of any unauthorised use of your Account, password or email, or any other breach or potential breach of the Software’s security;</span></p>
+    <p class="cl l5"><span class="n">(xvi)</span><span>use the Software for any purpose other than for the purpose for which it was designed, including that you must not use the Software in a manner that is illegal or fraudulent or facilitates illegal or fraudulent activity;</span></p>
+    <p class="cl l5"><span class="n">(xvii)</span><span>make any automated use of the Software and you must not copy, reproduce, translate, adapt, vary or modify the Software without our express written consent;</span></p>
+    <p class="cl l5"><span class="n">(xviii)</span><span>attempt to circumvent any technological protection mechanism or other security feature of the Software; or</span></p>
+    <p class="cl l5"><span class="n">(xix)</span><span>permit any use of the Software in addition to the Number of Software Users.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>If you become aware of misuse of your Software account by any person, any errors in the material on your account or any difficulty in accessing or using your account, please contact us immediately using the contact details or form provided on our Website.</span></p>
+    <p class="cl"><span class="n">(d)</span><span>You agree:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>to comply with each of your obligations in these Terms;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>to sign up for an Account in order to use the Software;</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>that information given to you through the Software, by us or another User, is general in nature and we take no responsibility for anything caused by any actions you take in reliance on that information; and</span></p>
+    <p class="cl l5"><span class="n">(iv)</span><span>that we may cancel your, or any User’s, Account at any time if we consider, in our absolute discretion, that you or they are in breach of, or are likely to breach, this clause 6.</span></p>
+  </section>
+  <section id="c7">
+    <h2>7. Fees and payment</h2>
+    <h3>7.1 Trial period</h3>
+    <p class="ind">We may from time to time offer a free or reduced-price version of the Software. If you have downloaded a free version, certain features may be limited until you purchase the full version of the App.</p>
+    <h3>7.2 Subscription fees</h3>
+    <p class="cl"><span class="n">(a)</span><span>You must pay the Purchase Price as displayed in the Apple App Store or Google Play Store at the time of download (Purchase Price).</span></p>
+    <p class="cl"><span class="n">(b)</span><span>The Purchase Price is non-refundable for change of mind. This does not affect any refund rights you may have under the Australian Consumer Law or the applicable App Store or Google Play Store refund policies.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>The Purchase Price is due and payable at the time of download from the Apple App Store or Google Play Store.</span></p>
+    <h3>7.3 One-time purchase</h3>
+    <p class="ind">Subject to clauses 7.4 and 7.5:</p>
+    <p class="cl"><span class="n">(a)</span><span>Your Software will continue to renew on an automatic indefinite basis unless you cancel in accordance with clause 13 or through your Apple App Store or Google Play Store subscription settings.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>While your Software is maintained, your Subscription Fees will continue to be charged at the beginning of each successive period for which your Subscription renews (Renewal Period) to the payment method linked to your Apple App Store or Google Play Store account.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>By purchasing the App, you acknowledge and agree that the Purchase Price is a one-time payment and no further charges will be made unless you separately agree to purchase additional features or services within the App.</span></p>
+    <h3>7.4 Grace period</h3>
+    <p class="ind">If you believe you have been incorrectly charged for the App, please contact us or submit a refund request through the Apple App Store or Google Play Store (as applicable). We will take reasonable steps to support legitimate refund requests.</p>
+    <h3>7.5 Changes to subscription fees</h3>
+    <p class="ind">We may, from time to time, change the price of the App for new purchasers. Any change in pricing will not affect your existing purchase. If we introduce optional in-app purchases or paid upgrades, the applicable fees will be displayed within the App or the relevant app store before you are asked to pay.</p>
+    <h3>7.6 GST</h3>
+    <p class="ind">Unless otherwise indicated, the Fees, being all amounts payable by you under these Terms, do not include GST. In relation to any GST payable for a taxable supply by us, you must pay the GST subject to us providing a tax invoice.</p>
+    <h3>7.7 Card surcharges</h3>
+    <p class="cl"><span class="n">(a)</span><span>We do not apply surcharges to payments made using the eftpos, Mastercard, or Visa networks (including debit, prepaid, and credit cards).</span></p>
+    <p class="cl"><span class="n">(b)</span><span>Where permitted by law, we may, at the time a payment is processed, apply a surcharge to payments made using any payment method that is not subject to the RBA surcharging restrictions - for example American Express, Diners Club, or similar. Any such surcharge will not exceed our cost of acceptance for that payment method.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>For the purposes of this clause, the "<strong>RBA surcharging restrictions</strong>" means the restrictions on payment surcharges imposed or administered by the Reserve Bank of Australia under the Payment Systems (Regulation) Act 1998 (Cth), and any associated standards, determinations, network rules, or instruments in force from time to time.</span></p>
+    <h3>7.8 Online payment partner</h3>
+    <p class="cl"><span class="n">(a)</span><span>We use third-party online payment partners, currently Apple App Store and Google Play Store (<strong>Online Payment Partner</strong>), to collect Subscription Fees.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>Provided that we have notified you of the Online Payment Partner’s terms and provided you with a copy of, or link to, those terms, you acknowledge and agree that:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>the processing of payments by the Online Payment Partner will be, in addition to this agreement, subject to the terms, conditions and privacy policies of the Online Payment Partner, which can be found <mark class="todo">[here]</mark>;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>you release us and our Personnel in respect of all liability for loss, damage or injury which may be suffered by any person arising from any act or omission of the Online Payment Partner, including any issue with security or performance of the Online Payment Partner’s platform or any error or mistake in processing your payment; and</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>we reserve the right to correct, or to instruct our Online Payment Partner to correct, any errors or mistakes in collecting your payment.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>You have the right to reject any terms and conditions of the Online Payment Partner. If you reject those terms, we cannot provide you with the Subscription and clause 13 will apply.</span></p>
+  </section>
+  <section id="c8">
+    <h2>8. Intellectual property and data</h2>
+    <h3>8.1 Software content intellectual property</h3>
+    <p class="cl"><span class="n">(a)</span><span>(<strong>Our ownership</strong>) We retain ownership of all Materials provided to you throughout the course of your Subscription in connection with the Software (including text, graphics, logos, design, icons, images, sound and video recordings, pricing, downloads and software) (<strong>Software Content</strong>) and reserve all rights in any Intellectual Property Rights owned or licensed by us in the Software Content not expressly granted to you.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>(<strong>Licence to you</strong>) You are granted a licence to the Software Content, for the Number of Software Users, and you may make a temporary electronic copy of all or part of any materials provided to you for the sole purpose of viewing them and using them for the purposes of the Software. You must not otherwise reproduce, transmit, adapt, distribute, sell, modify or publish those materials or any Software Content without prior written consent from us or as otherwise permitted by law.</span></p>
+    <h3>8.2 User data</h3>
+    <h4>Our Rights and Obligations</h4>
+    <p class="cl"><span class="n">(a)</span><span>You grant to us (and our Personnel) a non-exclusive, royalty free, non-transferable licence to use User Data to the extent reasonably required to provide the Software and related support. We may use de-identified, aggregated data for our internal business purposes, including to improve the Software and our other products and services, provided such use complies with applicable privacy laws and does not identify you or any User. This licence terminates upon termination of this agreement, except in respect of de-identified, aggregated data.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>We reserve the right to remove any User Data at any time, for any reason, including where we deem User Data to be inappropriate, offensive, illicit, illegal, pornographic, sexist, homophobic or racist.</span></p>
+    <h4>Your Obligations and Grant of Licence to Us</h4>
+    <p class="cl"><span class="n">(a)</span><span>You are responsible for ensuring that:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>you share User Data only with intended recipients; and</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>all User Data is appropriate and not in contravention of these Terms.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>You:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>warrant that our use of User Data will not infringe any third-party Intellectual Property Rights; and</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>indemnify us from and against all losses, claims, expenses, damages and liabilities (including any taxes, fees or costs) which arise out of such infringement.</span></p>
+  </section>
+  <section id="c9">
+    <h2>9. Confidentiality</h2>
+    <p class="cl"><span class="n">(a)</span><span>Except as contemplated by these Terms, a party must not, and must not permit any of its Personnel, use or disclose to any person any Confidential Information disclosed to it by the other party without the disclosing party’s prior written consent.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>Each party must promptly notify the other party if it learns of any potential, actual or suspected loss, misappropriation or unauthorised access to, or disclosure or use of Confidential Information or other compromise of the security, confidentiality, or integrity of Confidential Information.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>The notifying party will investigate each potential, actual or suspected breach of confidentiality and assist the other party in connection with any related investigation.</span></p>
+  </section>
+  <section id="c10">
+    <h2>10. Privacy</h2>
+    <p class="cl"><span class="n">(a)</span><span>We collect personal information about you in the course of providing you with the Software, to contact and communicate with you, to respond to your enquiries and for other purposes set out in our Privacy Policy which can be found at <a href="https://michifriend.com/privacy/">https://michifriend.com/privacy/</a>.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>Our Privacy Policy contains more information about how we use, disclose and store your personal information and details how you can access and correct your personal information.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>By agreeing to these Terms, you agree to our handling of personal information, including health information you or your Users upload to the Software, in accordance with our Privacy Policy.</span></p>
+  </section>
+  <section id="c11">
+    <h2>11. Liability</h2>
+    <h3>11.1 Warranties and limitations</h3>
+    <p class="cl"><span class="n">(a)</span><span>(<strong>Warranties</strong>) We warrant that:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>during the Subscription Period, the Software will perform substantially in accordance with the Documentation;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>during the Subscription Period, the Software will be provided as described to you in, and subject to, these Terms; and</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>to our knowledge, the use of the Software in accordance with these Terms will not infringe the Intellectual Property Rights of any third party.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>(<strong>Errors</strong>) We will correct any errors, bugs or defects in the Software which arise during your Subscription and which are notified to us by you, unless the errors, bugs or defects:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>result from the interaction of the Software with any other Software or computer hardware, software or services not approved in writing by us;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>result from any misuse of the Software; or</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>result from the use of the Software by you other than in accordance with these Terms or the Documentation.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>(<strong>Service Limitations</strong>) While we will use our best endeavours to ensure the Software is working for its intended purpose, you acknowledge and agree that from time to time, you may encounter the following issues:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>the Software may have errors or defects;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>the Software may not be accessible at times;</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>messages sent through the Software may not be delivered promptly, or delivered at all;</span></p>
+    <p class="cl l5"><span class="n">(iv)</span><span>information you receive or supply through the Software may, despite our reasonable security measures, be subject to security risks inherent in internet-based systems; or</span></p>
+    <p class="cl l5"><span class="n">(v)</span><span>any information provided through the Software may not be accurate or true.</span></p>
+    <p class="cl"><span class="n">(d)</span><span>(<strong>Exclusion</strong>) To the maximum extent permitted by applicable law, all express or implied representations and warranties not expressly stated in these Terms are excluded.</span></p>
+    <p class="cl"><span class="n">(e)</span><span>(<strong>Consumer law</strong>) Nothing in these Terms is intended to limit the operation of the Australian Consumer Law contained in the Competition and Consumer Act 2010 (Cth) (<strong>ACL</strong>). Under the ACL, you may be entitled to certain remedies (like a refund, replacement or repair) if there is a failure with the goods or services provided.</span></p>
+    <h3>11.2 Liability</h3>
+    <p class="cl"><span class="n">(a)</span><span>To the maximum extent permitted by law and subject to clause 11.2(b), the total liability of each party in respect of loss or damage sustained by the other party in connection with these Terms or the Software is limited to the total Fees paid and payable to us by you in the 6 months preceding the date of the event giving rise to the relevant liability.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>Clause 11.2(a) does not apply to your liability in respect of loss or damage sustained by us arising from your breach of third party intellectual property rights.</span></p>
+    <h3>11.3 Consequential loss</h3>
+    <p class="ind">To the maximum extent permitted by law, neither party will be liable for any incidental, special or consequential loss or damage, or damages for loss of data, business or business opportunity, goodwill, anticipated savings, profits or revenue in connection with these Terms or any goods or services provided by us, except:</p>
+    <p class="cl"><span class="n">(a)</span><span>in relation to a party’s liability for fraud, personal injury, death or loss or damage to tangible property; or</span></p>
+    <p class="cl"><span class="n">(b)</span><span>to the extent this liability cannot be excluded under the Competition and Consumer Act 2010 (Cth).</span></p>
+  </section>
+  <section id="c12">
+    <h2>12. Upgrade and downgrades</h2>
+    <p class="cl"><span class="n">(a)</span><span>If additional features or in-app purchases become available, you may choose to purchase them within the App. Details of any additional features and their pricing will be displayed in the App or on the relevant app store. We will:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>take reasonable steps to promptly provide you with access to the new features; and</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>upon providing such access, apply the new, relevant Subscription Fees, to the Renewal Period immediately following the period in which your access to the new features was provided, and you will be charged at the new Subscription Fee in every subsequent Renewal Period.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>If you choose to downgrade your Subscription, access to the new features and the new Subscription Fees will take effect at the start of the next Renewal Period, unless we notify you otherwise. We generally do not pro-rate downgrades in between Renewal Periods, however we reserve the right to do so from time to time.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>If you choose to downgrade your Subscription, you acknowledge and agree we are not liable, and you release us from all claims in relation to, any loss of content, features, or capacity, including any User Data.</span></p>
+  </section>
+  <section id="c13">
+    <h2>13. Cancellation</h2>
+    <h3>13.1 Cancellation at any time</h3>
+    <p class="ind">You may stop using the App at any time by deleting it from your device. We may terminate your licence to use the App by providing 30 Calendar Days’ written notice to you.</p>
+    <h3>13.2 Cancellation for breach</h3>
+    <p class="cl"><span class="n">(a)</span><span>Either party may cancel your Subscription immediately by written notice if there has been a Breach of these Terms.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>A “<strong>Breach</strong>” of these Terms means:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>a party (<strong>Notifying Party</strong>) considers the other party (or any of its Personnel or Users) is in breach of these Terms and notifies the other party;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>the other party is given 14 Business Days to rectify the breach; and</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>the breach has not been rectified within 14 Business Days or another period agreed between the parties in writing.</span></p>
+    <h3>13.3 Effect of termination</h3>
+    <p class="ind">Upon termination of this agreement:</p>
+    <p class="cl"><span class="n">(a)</span><span>you will no longer have access to the Software, your Account or your User Data and we will have no responsibility to store or otherwise retain any User Data (and you release us in respect of any loss or damage which may arise out of us not retaining any User Data beyond that point);</span></p>
+    <p class="cl"><span class="n">(b)</span><span>unless agreed in writing, no portion of the Purchase Price will be refundable upon termination, except where required by applicable law, including the Australian Consumer Law; and</span></p>
+    <p class="cl"><span class="n">(c)</span><span>each party must comply with all obligations that are by their nature intended to survive the end of this agreement, including without limitation intellectual property and confidentiality.</span></p>
+    <h3>13.4 Data backup</h3>
+    <p class="cl"><span class="n">(a)</span><span>Upon termination of the agreement, you will have 30 days to access and export your data. After this period, we will securely delete all personal data, except where retention is required by applicable law or expressly instructed by you. Backup data will be rendered inaccessible and deleted within 60 days.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>While we disclaim liability for indirect, incidental, or consequential losses arising from termination, we acknowledge our obligation to ensure that User Data is handled in accordance with these Terms, the Privacy Act 1988 (Cth) and any other relevant legislation or regulation applicable in your jurisdiction.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>We shall not be liable for any loss of User Data resulting from your failure to export or request return of such data within the agreed timeframe following termination, provided that we have made such options reasonably available.</span></p>
+  </section>
+  <section id="c14">
+    <h2>14. Dispute resolution</h2>
+    <p class="cl"><span class="n">(a)</span><span>A party claiming that a dispute has arisen under or in connection with this agreement must not commence court proceedings arising from or relating to the dispute, other than a claim for urgent interlocutory relief, unless that party has complied with the requirements of this clause.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>A party that requires resolution of a dispute which arises under or in connection with this agreement must give the other party or parties to the dispute written notice containing reasonable details of the dispute and requiring its resolution under this clause.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>Once the dispute notice has been given, each party to the dispute must then use its best efforts to resolve the dispute in good faith. If the dispute is not resolved within a period of 14 days (or such other period as agreed by the parties in writing) after the date of the notice, any party to the dispute may take legal proceedings to resolve the dispute.</span></p>
+  </section>
+  <section id="c15">
+    <h2>15. Force majeure</h2>
+    <p class="cl"><span class="n">(a)</span><span>We will not be liable for any delay or failure to perform our obligations under this agreement if such delay or failure arises out of a Force Majeure Event.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>If a Force Majeure Event occurs, we must use reasonable endeavours to notify you of:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>reasonable details of the Force Majeure Event; and</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>so far as is known, the probable extent to which we will be unable to perform or be delayed in performing our obligations under this agreement.</span></p>
+    <p class="cl"><span class="n">(c)</span><span>Subject to compliance with clause 15(b), our relevant obligation will be suspended during the Force Majeure Event to the extent that it is affected by the Force Majeure Event.</span></p>
+    <p class="cl"><span class="n">(d)</span><span>For the purposes of this agreement, a ‘Force Majeure Event’ means any:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>act of God, lightning strike, meteor strike, earthquake, storm, flood, landslide, explosion or fire;</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>strikes or other industrial action outside our control;</span></p>
+    <p class="cl l5"><span class="n">(iii)</span><span>war, terrorism, sabotage, blockade, revolution, riot, insurrection, civil commotion, epidemic, pandemic; or</span></p>
+    <p class="cl l5"><span class="n">(iv)</span><span>any decision of a government authority, to the extent it is beyond our reasonable control and affects our ability to perform our obligations.</span></p>
+  </section>
+  <section id="c16">
+    <h2>16. Notices</h2>
+    <p class="cl"><span class="n">(a)</span><span>A notice or other communication to a party under these Terms must be:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>in writing and in English; and</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>delivered via email to the other party, being in your case the email address associated with your Account and in our case <a href="mailto:usefulthings.studio@gmail.com">usefulthings.studio@gmail.com</a> (<strong>Email Address</strong>). The parties may update their Email Address by notice to the other party.</span></p>
+    <p class="cl"><span class="n">(b)</span><span>Unless the party sending the notice knows or reasonably ought to suspect that an email was not delivered to the other party’s Email Address, notice will be taken to be given:</span></p>
+    <p class="cl l5"><span class="n">(i)</span><span>24 hours after the email was sent, unless that falls on a Saturday, Sunday or a public holiday in the state or territory whose laws govern this agreement, in which case the notice will be taken to be given on the next occurring business day in that state or territory; or</span></p>
+    <p class="cl l5"><span class="n">(ii)</span><span>when replied to by the other party,</span></p>
+    <p class="ind">whichever is earlier.</p>
+  </section>
+  <section id="c17">
+    <h2>17. General</h2>
+    <h3>17.1 Governing law and jurisdiction</h3>
+    <p class="ind">This agreement is governed by the law applying in New South Wales, Australia. Each party irrevocably submits to the exclusive jurisdiction of the courts of New South Wales, Australia and courts of appeal from them in respect of any proceedings arising out of or in connection with this agreement. Each party irrevocably waives any objection to the venue of any legal process on the basis that the process has been brought in an inconvenient forum.</p>
+    <h3>17.2 Waiver</h3>
+    <p class="ind">No party to this agreement may rely on the words or conduct of any other party as a waiver of any right unless the waiver is in writing and signed by the party granting the waiver.</p>
+    <h3>17.3 Severance</h3>
+    <p class="ind">Any term of this agreement which is wholly or partially void or unenforceable is severed to the extent that it is void or unenforceable. The validity and enforceability of the remainder of this agreement are not limited or otherwise affected.</p>
+    <h3>17.4 Joint and several liability</h3>
+    <p class="ind">An obligation or a liability assumed by, or a right conferred on, two or more persons binds or benefits them jointly and severally.</p>
+    <h3>17.5 Assignment</h3>
+    <p class="ind">You cannot assign, novate or otherwise transfer any of your rights or obligations under this agreement without our prior written consent. We may assign or transfer our rights and obligations under this agreement in connection with a merger, acquisition, sale of assets, or restructure of our business, provided the assignee agrees to be bound by these Terms.</p>
+    <h3>17.6 Entire agreement</h3>
+    <p class="ind">This agreement embodies the entire agreement between the parties and supersedes any prior negotiation, conduct, arrangement, understanding or agreement, express or implied, in relation to the subject matter of this agreement.</p>
+    <h3>17.7 Interpretation</h3>
+    <p class="cl"><span class="n">(a)</span><span>(<strong>singular and plural</strong>) words in the singular includes the plural (and vice versa);</span></p>
+    <p class="cl"><span class="n">(b)</span><span>(<strong>currency</strong>) a reference to $; or “dollar” is to Australian currency;</span></p>
+    <p class="cl"><span class="n">(c)</span><span>(<strong>gender</strong>) words indicating a gender include the corresponding words of any other gender;</span></p>
+    <p class="cl"><span class="n">(d)</span><span>(<strong>defined terms</strong>) if a word or phrase is given a defined meaning, any other part of speech or grammatical form of that word or phrase has a corresponding meaning;</span></p>
+    <p class="cl"><span class="n">(e)</span><span>(<strong>person</strong>) a reference to “person” or “you” includes an individual, the estate of an individual, a corporation, an authority, an association, a consortium or joint venture (whether incorporated or unincorporated), a partnership, a trust and any other entity;</span></p>
+    <p class="cl"><span class="n">(f)</span><span>(<strong>party</strong>) a reference to a party includes that party’s executors, administrators, successors and permitted assigns, including persons taking by way of novation and, in the case of a trustee, includes any substituted or additional trustee;</span></p>
+    <p class="cl"><span class="n">(g)</span><span>(<strong>this agreement</strong>) a reference to a party, clause, paragraph, schedule, exhibit, attachment or annexure is a reference to a party, clause, paragraph, schedule, exhibit, attachment or annexure to or of this agreement, and a reference to this agreement includes all schedules, exhibits, attachments and annexures to it;</span></p>
+    <p class="cl"><span class="n">(h)</span><span>(<strong>document</strong>) a reference to a document (including this agreement) is to that document as varied, novated, ratified or replaced from time to time;</span></p>
+    <p class="cl"><span class="n">(i)</span><span>(<strong>headings</strong>) headings and words in bold type are for convenience only and do not affect interpretation;</span></p>
+    <p class="cl"><span class="n">(j)</span><span>(<strong>includes</strong>) the word “includes” and similar words in any form are not a word of limitation; and</span></p>
+    <p class="cl"><span class="n">(k)</span><span>(<strong>adverse interpretation</strong>) no provision of this agreement will be interpreted adversely to a party because that party was responsible for the preparation of this agreement or that provision.</span></p>
+  </section>
+  <section id="definitions">
+    <h2>Definitions</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Term</th><th>Definition</th></tr><tr><th>Confidential Information</th><td>means information of or provided by a party that is by its nature is confidential information, is designated by that party as confidential, or that the other party knows or ought to know is confidential, but does not include information, which is or becomes, without a breach of confidentiality, public knowledge.</td></tr><tr><th>Documentation</th><td>means all manuals, help files and other documents supplied by us to you relating to the Software, whether in electronic or hardcopy form.</td></tr><tr><th>Hosting Services</th><td>has the meaning given in clause 5.</td></tr><tr><th>Intellectual Property Rights</th><td>means any and all present and future intellectual and industrial property rights throughout the world (whether registered or unregistered), including copyright, trade marks, designs, patents, moral rights, semiconductor and circuit layout rights, trade, business, company and domain names, and other proprietary rights, trade secrets, know-how, technical data, confidential information and the right to have information kept confidential, or any rights to registration of such rights (including renewal), whether created before or after the date of this agreement.</td></tr><tr><th>Material</th><td>means tangible and intangible information, documents, reports, software (including source and object code), inventions, data and other materials in any media whatsoever.</td></tr><tr><th>Personnel</th><td>means, in respect of a party, its officers, employees, contractors (including subcontractors) and agents.</td></tr><tr><th>Software</th><td>has the meaning given in the first page of these Terms.</td></tr><tr><th>Software Content</th><td>has the meaning set out in clause 8.1(a).</td></tr><tr><th>Subscription</th><td>has meaning given in the first page of these Terms.</td></tr><tr><th>Subscription Fees</th><td>has the meaning set out in the first page of these Terms and clause 7 of these Terms.</td></tr><tr><th>Subscription Period</th><td>means the period of your Subscription to the Software as selected in the Apple App Store or Google Play Store on commencement of your Subscription.</td></tr><tr><th>Support Services</th><td>has the meaning given in clause 4.8.</td></tr><tr><th>User</th><td>means you and any third party end user of the Software who you make the Software available to.</td></tr><tr><th>User Data</th><td>means any files, data, documents, information or any other Materials, which are uploaded to the Software by you or any other User or which you, your Personnel or Users otherwise provide to us under or in connection with these Terms, including any Intellectual Property Rights attaching to those materials.</td></tr><tr><th>Website</th><td>means the website at the URL set out in the first paragraph of these Terms, and any other website operated by us in connection with the Software.</td></tr>
+      </table>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

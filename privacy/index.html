@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michi Privacy Policy</title>
+<!--
+  Michi's privacy policy, from the lawyer's Word document. The words are the
+  lawyer's. Only the layout is ours. The theme matches the other pages.
+
+  Placeholders still to fill are marked <mark class="todo">. Search for
+  "todo" before publishing.
+-->
+<style>
+  :root {
+    --canvas: #F6F1E2;
+    --surface: #FFFFFF;
+    --surface-muted: #E2E8D6;
+    --border: #E0DBC6;
+    --hairline: #ECE7D4;
+    --ink: #2C3324;
+    --caption: #4A5440;
+    --accent: #3D5232;
+    --on-accent: #F6F1E2;
+    --open: #7C5A1F;
+    --open-wash: #F3EAD6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --canvas: #1B2418;
+      --surface: #232E1E;
+      --surface-muted: #2E3B27;
+      --border: #3B4D33;
+      --hairline: #2E3B27;
+      --ink: #F2ECD9;
+      --caption: #CBD6BD;
+      --accent: #B6C795;
+      --on-accent: #1B2418;
+      --open: #D3A863;
+      --open-wash: #33301F;
+    }
+  }
+  :root[data-theme="dark"] {
+    --canvas: #1B2418;
+    --surface: #232E1E;
+    --surface-muted: #2E3B27;
+    --border: #3B4D33;
+    --hairline: #2E3B27;
+    --ink: #F2ECD9;
+    --caption: #CBD6BD;
+    --accent: #B6C795;
+    --on-accent: #1B2418;
+    --open: #D3A863;
+    --open-wash: #33301F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 16px 64px;
+  }
+
+  header { margin-bottom: 32px; }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .meta li {
+    background: var(--surface-muted);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .meta .status { background: var(--accent); color: var(--on-accent); }
+
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 20px 0 8px;
+  }
+
+  h3:first-of-type { margin-top: 0; }
+
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .caption { color: var(--caption); font-size: 15px; }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 2px;
+  }
+
+
+  .open-block {
+    background: var(--open-wash);
+    border-color: var(--open);
+  }
+
+  ul.plain, ol.plain { margin: 0 0 12px; padding-left: 20px; }
+  ul.plain:last-child, ol.plain:last-child { margin-bottom: 0; }
+  ul.plain li, ol.plain li { margin-bottom: 4px; }
+
+  ol.contents {
+    margin: 0;
+    padding-left: 24px;
+    columns: 2 220px;
+    column-gap: 24px;
+  }
+
+  ol.contents li { margin-bottom: 4px; break-inside: avoid; }
+
+  mark.todo {
+    background: var(--open-wash);
+    color: var(--open);
+    border: 1px dashed var(--open);
+    border-radius: 4px;
+    padding: 0 4px;
+    font-weight: 600;
+  }
+
+  h4 { font-size: 16px; margin: 16px 0 8px; color: var(--caption); }
+
+  p.cl {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 4px;
+  }
+  p.cl.l5 { padding-left: 36px; }
+  p.cl .n { color: var(--caption); }
+  p.ind { padding-left: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 8px 12px 8px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  th { font-weight: 600; }
+  tr:last-child td, tr:last-child th { border-bottom: none; }
+
+  .table-wrap { overflow-x: auto; margin-bottom: 12px; }
+  .table-wrap:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>Michi privacy policy</h1>
+    <p class="caption">How we collect, use, store and share your personal information.</p>
+    <ul class="meta">
+      <li class="status">Draft</li>
+      <li>Last updated <mark class="todo">[insert]</mark></li>
+      <li>Australian Privacy Act</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Contents</h2>
+    <ol class="contents">
+      <li><a href="#c1">Introduction</a></li>
+      <li><a href="#c2">Types of personal information we collect</a></li>
+      <li><a href="#c3"><mark class="todo">[Optional]</mark> Personal information of minors</a></li>
+      <li><a href="#c4">How personal information is collected</a></li>
+      <li><a href="#c5">Use of your personal information</a></li>
+      <li><a href="#c6">Automated decision-making</a></li>
+      <li><a href="#c7">How we disclose your personal information</a></li>
+      <li><a href="#c8">Storage of your personal information</a></li>
+      <li><a href="#c9">Sensitive information</a></li>
+      <li><a href="#c10">Marketing</a></li>
+      <li><a href="#c11"><mark class="todo">[Optional]</mark> De-identified information</a></li>
+      <li><a href="#c12">Security</a></li>
+      <li><a href="#c13">Links</a></li>
+      <li><a href="#c14">Requesting access or correcting your personal information</a></li>
+      <li><a href="#c15">Complaints</a></li>
+      <li><a href="#c16">Contact us</a></li>
+    </ol>
+  </section>
+
+  <section id="c1">
+    <h2>1. Introduction</h2>
+    <p class="ind">This document sets out the privacy policy of <mark class="todo">[insert]</mark> (referred to in this privacy policy as ‘<strong>we</strong>’, ‘<strong>us</strong>’, or ‘<strong>our’</strong>).</p>
+    <p class="ind">The Privacy Act 1988 (Cth) (<strong>Privacy Act</strong>) requires entities bound by the Australian Privacy Principles to have a privacy policy. We take our privacy obligations seriously and we’ve created this privacy policy to explain how we store, maintain, use and disclose personal information.</p>
+    <p class="ind">We are committed to preventing serious invasions of privacy and ensuring the protection of your personal information, so you can contact us using the details below if you have any questions or concerns.</p>
+    <p class="ind">By providing personal information to us, you consent to our storage, maintenance, use and disclosure of personal information in accordance with this privacy policy. Where we collect sensitive information (including health information), we will seek your express consent at the point of collection, such as through an in-app consent prompt, before collecting, using or disclosing that information.</p>
+    <p class="ind">We may change this privacy policy from time to time by posting an updated copy within the app and on our website. Where we make material changes, we will notify you through the app before the changes take effect. We encourage you to review this privacy policy regularly to ensure that you are aware of our most current practices.</p>
+  </section>
+  <section id="c2">
+    <h2>2. Types of personal information we collect</h2>
+    <p class="ind">The personal information we collect may include the following:</p>
+    <p class="cl"><span class="n">(a)</span><span>name;</span></p>
+    <p class="cl"><span class="n">(b)</span><span>device type, operating system, and app version;</span></p>
+    <p class="cl"><span class="n">(c)</span><span>email address;</span></p>
+    <p class="cl"><span class="n">(d)</span><span>social media information;</span></p>
+    <p class="cl"><span class="n">(e)</span><span>subscription and purchase history (via Apple, Google, and RevenueCat);</span></p>
+    <p class="cl"><span class="n">(f)</span><span>age or date of birth (if collected in connection with a future age-verification feature);</span></p>
+    <p class="cl"><span class="n">(g)</span><span>usage analytics data, including screens visited and interaction counts;</span></p>
+    <p class="cl"><span class="n">(h)</span><span>purchase status and subscription information received from Apple, Google, and RevenueCat (we do not collect or store credit card or payment card details);</span></p>
+    <p class="cl"><span class="n">(i)</span><span>sensitive information (such as <mark class="todo">[insert e.g., health information]</mark>) as set out below;</span></p>
+    <p class="cl"><span class="n">(j)</span><span>information you provide through in-app features, such as gratitude lists and feedback;</span></p>
+    <p class="cl"><span class="n">(k)</span><span>responses to in-app quizzes and guided lesson exercises;</span></p>
+    <p class="cl"><span class="n">(l)</span><span>your device identity and type, I.P. address, geo-location information, page view statistics, advertising data and standard web log information;</span></p>
+    <p class="cl"><span class="n">(m)</span><span>reminder preferences and notification settings; and</span></p>
+    <p class="cl"><span class="n">(n)</span><span>any other information provided by you to us via our app, or otherwise required by us or provided by you.</span></p>
+  </section>
+  <section id="c3">
+    <h2>3. <mark class="todo">[Optional]</mark> Personal information of minors</h2>
+    <p class="ind">If we collect personal information from individuals under the age of 18, we will assess their capacity to consent on a case-by-case basis in accordance with the Australian Privacy Principles (APP) Guidelines. As a general principle, an individual under the age of 18 may have the capacity to consent if they demonstrate sufficient maturity to understand the nature and consequences of what is being proposed. Where it is determined that the individual does not have such capacity, we will seek verifiable consent from a parent or guardian.</p>
+    <p class="ind">If it is not practicable to assess capacity on a case-by-case basis, we will generally assume that individuals aged 15 and above have the capacity to provide consent, unless there are reasonable grounds to believe otherwise. Our app is not intended for use by children under the age of <mark class="todo">[13/15 - to be confirmed]</mark>. Parents or guardians may contact us at <a href="mailto:usefulthings.studio@gmail.com">usefulthings.studio@gmail.com</a> to review, manage, or request deletion of their child’s personal information.</p>
+  </section>
+  <section id="c4">
+    <h2>4. How personal information is collected</h2>
+    <p class="ind">We will collect your personal information in a lawful and fair way. We will only collect your personal information where you have consented to it, or otherwise in accordance with the law.</p>
+    <h3>How we collect information from you</h3>
+    <p class="ind">We may collect personal information where you:</p>
+    <p class="cl"><span class="n">(a)</span><span>use our app, including by creating entries, drawings, or providing feedback;</span></p>
+    <p class="cl"><span class="n">(b)</span><span>subscribe to or use our services;</span></p>
+    <p class="cl"><span class="n">(c)</span><span>submit any of our online inquiry forms;</span></p>
+    <p class="cl"><span class="n">(d)</span><span>communicate with us via email, telephone, SMS, social applications (such as LinkedIn or Facebook) or otherwise;</span></p>
+    <p class="cl"><span class="n">(e)</span><span>interact with our website, social applications, services, content and advertising; and</span></p>
+    <p class="cl"><span class="n">(f)</span><span>provide us with feedback or contact us for support.</span></p>
+    <h3>How we collect information from third parties</h3>
+    <p class="ind">Where possible, we collect your personal information directly from you. However, there may be occasions when we collect personal information about you from someone else. For example, we receive subscription status and purchase information from Apple, Google, and RevenueCat in connection with managing your subscription.</p>
+    <h3>How you provide information for someone else</h3>
+    <p class="ind">If you are providing personal and/or sensitive information on behalf of someone else, you must have the consent of that person to provide their personal and/or sensitive information to us for collection, use, and disclosure in accordance with this privacy policy. We reserve the right to request evidence of this consent.</p>
+    <p class="ind"><mark class="todo">[insert for minors]</mark> If you are providing personal and/or sensitive information on behalf of someone under the age of 18 (<strong>Minor</strong>), you must be that Minor’s parent or legal guardian and you must provide consent for the Minor’s personal and/or sensitive information to be collected, used and disclosed in accordance with this privacy policy.</p>
+    <h3>How we collect information from cookies</h3>
+    <p class="ind">We may also collect personal information from you when you use our app. This may be done through the use of analytics tools such as PostHog, which collect usage data including screens visited, device type, and country. You can disable analytics collection in the app’s settings (on the Me tab).</p>
+    <p class="ind">We use PostHog to collect and process anonymised usage data. PostHog drops your IP address and retains only your country. You can opt out of analytics collection at any time in the app’s Me tab.</p>
+  </section>
+  <section id="c5">
+    <h2>5. Use of your personal information</h2>
+    <p class="ind">We collect and use personal information for the following primary purposes:</p>
+    <p class="cl"><span class="n">(a)</span><span>to provide goods, services or information to you;</span></p>
+    <p class="cl"><span class="n">(b)</span><span>for record keeping and administrative purposes;</span></p>
+    <p class="cl"><span class="n">(c)</span><span>to provide information about you to our contractors, employees, consultants, agents or other third parties for the purpose of providing goods or services to you;</span></p>
+    <p class="cl"><span class="n">(d)</span><span>to improve and optimise our service offering and customer experience;</span></p>
+    <p class="cl"><span class="n">(e)</span><span>to comply with our legal obligations, resolve disputes or enforce our agreements with third parties;</span></p>
+    <p class="cl"><span class="n">(f)</span><span>to send you administrative messages, reminders, notices, updates, security alerts, and other information requested by you; and</span></p>
+    <p class="cl"><span class="n">(g)</span><span>to perform automated safety checks on your written entries to identify signs of distress and offer helpline information, as described below.</span></p>
+    <p class="ind">We may also use your personal information for:</p>
+    <p class="cl"><span class="n">(h)</span><span>secondary purposes closely related to the primary purpose, in circumstances where you would reasonably expect such use;</span></p>
+    <p class="cl"><span class="n">(i)</span><span>such purposes where we reasonably believe that use of your personal information is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety, and it is unreasonable or impracticable to obtain your consent;</span></p>
+    <p class="cl"><span class="n">(j)</span><span>any other purpose for which we receive consent from you; or</span></p>
+    <p class="cl"><span class="n">(k)</span><span>any other purpose which is permitted or required under applicable privacy laws.</span></p>
+  </section>
+  <section id="c6">
+    <h2>6. Automated decision-making</h2>
+    <p class="ind">We use an automated safety check (powered by OpenAI’s moderation model) to review your gratitude entries and feedback for signs of self-harm, harm to others, or abuse. If the safety check identifies concerning language, the app will display helpline information – it will never block, alter, or report what you have written, and we are not alerted. This check has limitations: it may not catch all concerning language, and it may sometimes respond to language that is not a cause for concern. You may request human review of any automated decision by contacting us at <a href="mailto:usefulthings.studio@gmail.com">usefulthings.studio@gmail.com</a>.</p>
+  </section>
+  <section id="c7">
+    <h2>7. How we disclose your personal information</h2>
+    <p class="ind">We respect your privacy, and we will take reasonable steps to keep your personal information confidential and protected. We may disclose your personal information to:</p>
+    <p class="cl"><span class="n">(a)</span><span>our third-party service providers, including Supabase (database and storage, Australia), OpenAI (safety check, United States), PostHog (analytics, United States), RevenueCat (subscription management, United States), and Brevo (transactional emails, European Union);</span></p>
+    <p class="cl"><span class="n">(b)</span><span>our professional advisors such as lawyers, accountants and auditors;</span></p>
+    <p class="cl"><span class="n">(c)</span><span>our related entities; or</span></p>
+    <p class="cl"><span class="n">(d)</span><span>any third parties you have consented personal information to be disclosed to.</span></p>
+    <p class="ind">We may also disclose personal information to third-party contractors as required for us to provide our services to you, such as cloud-service providers, IT professionals, and analytics providers.</p>
+    <p class="ind">We take care to work with such third parties who we believe maintain an acceptable standard of data security and require them not to use your personal information for any purpose except for those activities we have asked them to perform on our behalf.</p>
+    <p class="ind">We will not otherwise disclose your personal information unless:</p>
+    <p class="cl"><span class="n">(e)</span><span>you have consented to us disclosing your personal information for particular circumstances;</span></p>
+    <p class="cl"><span class="n">(f)</span><span>as needed in an emergency or in investigating suspected criminal activity;</span></p>
+    <p class="cl"><span class="n">(g)</span><span>we are required to disclose under a subpoena, court order or other mandatory reporting requirements;</span></p>
+    <p class="cl"><span class="n">(h)</span><span>we reasonably believe that disclosure of your information is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety, and it is unreasonable or impracticable to obtain your consent;</span></p>
+    <p class="cl"><span class="n">(i)</span><span>it is reasonably necessary for the establishment, exercise or defence of a legal claim; or</span></p>
+    <p class="cl"><span class="n">(j)</span><span>it is otherwise authorised or required by law.</span></p>
+  </section>
+  <section id="c8">
+    <h2>8. Storage of your personal information</h2>
+    <p class="ind">All personal information we collect is primarily stored on servers located in Australia (Sydney). However, in providing our services, we disclose personal information to the following overseas service providers: OpenAI (United States) for safety checks on user-written content; PostHog (United States) for anonymised analytics; RevenueCat (United States) for subscription management; and Brevo (European Union) for transactional emails. We take reasonable steps to ensure these providers comply with the Australian Privacy Principles or are subject to comparable privacy protections.</p>
+    <p class="ind">However, the cloud service providers we engage to provide us with Australian-based servers may operate overseas disaster recovery sites or have personnel overseas who may access the personal information we hold to assist us in managing our servers.</p>
+    <p class="ind">We use PostHog for app analytics, which may store anonymised usage data in the United States. PostHog drops your IP address before storage and retains only your country.</p>
+    <p class="ind">When you use the “Pass it on” sharing feature, the content is shared through your device’s native share functionality (such as WhatsApp or Messages). This sharing occurs directly from your device and does not pass through our servers. We do not collect or store information about who you share content with.</p>
+  </section>
+  <section id="c9">
+    <h2>9. Sensitive information</h2>
+    <h3>Collection of sensitive information</h3>
+    <p class="ind">We may collect sensitive information about you during the course of providing you with our services. We will only collect this sensitive information where you consent to such collection and directly provide us with this information through the app.</p>
+    <h3>Types of sensitive information we collect</h3>
+    <p class="ind">The sensitive information we collect may include the following:</p>
+    <p class="cl"><span class="n">(a)</span><span>health information, history and reports, including <mark class="todo">[insert]</mark>;</span></p>
+    <p class="cl"><span class="n">(b)</span><span>mood ratings and, where you choose to connect Apple Health, heart rate, sleep, and mindful minutes data;</span></p>
+    <p class="cl"><span class="n">(c)</span><span>journal entries and responses to guided prompts (planned feature); and</span></p>
+    <p class="cl"><span class="n">(d)</span><span>any other sensitive information you provide through the app.</span></p>
+    <p class="cl"><span class="n">(e)</span><span>information derived from Apple Health or Apple Watch, including heart rate, sleep, and mindful minutes data (only with your express permission, as a planned feature); and</span></p>
+    <p class="cl"><span class="n">(f)</span><span>any other sensitive information provided by you or a third party to us via our website or platforms, or otherwise provided by you or a third party to us.</span></p>
+    <h3>How we use your sensitive information</h3>
+    <p class="ind">Your sensitive information will only be used for the purpose of:</p>
+    <p class="cl"><span class="n">(a)</span><span>providing you with our goods and services;</span></p>
+    <p class="cl"><span class="n">(b)</span><span>complying with our legal obligations, resolving disputes or enforcing our agreements with you;</span></p>
+    <p class="cl"><span class="n">(c)</span><span>sending you messages, reminders, notices, updates, security alerts, and other information requested by you; or</span></p>
+    <p class="cl"><span class="n">(d)</span><span>any other purpose which is permitted or required under applicable privacy laws.</span></p>
+    <h3>How we disclose your sensitive information</h3>
+    <p class="ind">Your sensitive information will only be disclosed to third parties for the purpose of:</p>
+    <p class="cl"><span class="n">(a)</span><span>providing your written entries to OpenAI’s moderation model for the automated safety check described above (the content may be retained by OpenAI for up to 30 days but is not used for AI training); or</span></p>
+    <p class="cl"><span class="n">(b)</span><span>any other purpose which is permitted or required under applicable privacy laws.</span></p>
+    <h3>How you can withdraw consent</h3>
+    <p class="ind">If you wish to withdraw your consent to our collection, use or disclosure of your sensitive information, you can use the “Delete everything” feature in the app to immediately remove your account and all associated data, or contact us using the contact details set out below. We will deal with all such requests within a reasonable timeframe.</p>
+  </section>
+  <section id="c10">
+    <h2>10. Marketing</h2>
+    <p class="ind">We may at times send you marketing communications in accordance with the Spam Act 2003 (Cth) (<strong>Spam Act</strong>).</p>
+    <p class="ind">If we do, we will use email to send you direct marketing communications.</p>
+    <p class="ind">Where consent is needed, we will ask you for your consent before sending you marketing communications, except where you:</p>
+    <p class="cl"><span class="n">(a)</span><span>have explicitly opted in to receiving email marketing from us in the past; or</span></p>
+    <p class="cl"><span class="n">(b)</span><span>have explicitly opted in to receiving marketing communications from us.</span></p>
+    <p class="ind">You can, at any time, opt out of receiving marketing materials from us by using the opt-out facility provided (e.g., an unsubscribe link on emails we send you) or by contacting us via the details provided at the end of this privacy policy. We will implement such a request as soon as possible; however, we cannot guarantee that such a response will be immediate.</p>
+  </section>
+  <section id="c11">
+    <h2>11. <mark class="todo">[Optional]</mark> De-identified information</h2>
+    <p class="ind">The information we collect may have analytical and research value. Where we have de-identified the information we have collected so that it can no longer reasonably identify you, we may use and share such information for research purposes (including with academic institutions) and to improve our services. We will not sell or commercially distribute de-identified data.</p>
+  </section>
+  <section id="c12">
+    <h2>12. Security</h2>
+    <p class="ind">We take reasonable steps to ensure your personal information is secure and protected from misuse or unauthorised access. Our information technology systems are password protected, and we use a range of administrative and technical measures to protect these systems. However, we cannot guarantee the security of your personal information.</p>
+  </section>
+  <section id="c13">
+    <h2>13. Links</h2>
+    <p class="ind">Our app may contain links to other websites and apps, including helpline services (such as Lifeline and Beyond Blue) and the Beyond Now safety planning app. Those links are provided for your wellbeing and convenience and may not remain current or be maintained. We are not responsible for the privacy practices of those linked websites or apps and we suggest you review their privacy policies before using them.</p>
+  </section>
+  <section id="c14">
+    <h2>14. Requesting access or correcting your personal information</h2>
+    <p class="ind">You can access and export your personal information at any time using the “Send me a copy of everything” feature in the app’s Me tab. If you wish to request additional access to the personal information we hold about you, please contact us using the contact details set out below, including your name and contact details. We may need to verify your identity before providing you with your personal information. In some cases, we may be unable to provide you with access to all your personal information and where this occurs, we will explain why. We will deal with all requests for access to personal information within a reasonable timeframe.</p>
+    <p class="ind">If you think that any personal information we hold about you is inaccurate, please contact us using the contact details set out below and we will take reasonable steps to ensure that it is corrected.</p>
+  </section>
+  <section id="c15">
+    <h2>15. Complaints</h2>
+    <p class="ind">If you wish to complain about how we handle your personal information held by us, please contact us using the details set out below, including your name and contact details. We will investigate your complaint promptly and respond to you within a reasonable timeframe. If you are not satisfied with our response, you may lodge a complaint with the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au">www.oaic.gov.au</a>.</p>
+  </section>
+  <section id="c16">
+    <h2>16. Contact us</h2>
+    <p class="ind">For further information about our privacy policy or practices, or to access or correct your personal information, or make a complaint, please contact us using the details set out below:</p>
+    <p class="ind"><strong>Name: </strong><mark class="todo">[insert]</mark></p>
+    <p class="ind"><strong>Email</strong>: <a href="mailto:usefulthings.studio@gmail.com">usefulthings.studio@gmail.com</a></p>
+    <p class="ind">Our privacy policy was last updated on <mark class="todo">[insert]</mark>.</p>
+  </section>
+
+</main>
+</body>
+</html>
