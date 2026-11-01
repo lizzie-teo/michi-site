@@ -3,22 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Michi Support</title>
+<title>Michi</title>
+<meta name="description" content="Michi is a small friend for the everyday. Short lessons, guided meditations, colouring, and a place to keep good things.">
+<link rel="icon" href="/icon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <!--
-  Michi's support page: the App Store Connect Support URL, and the way in
-  to the terms and the privacy policy beside it. The theme matches those
-  two pages.
-
-  Placeholders still to fill are marked <mark class="todo">. Search for
-  "todo" before publishing.
+  Michi's home page at michifriend.com. The theme matches the help, terms
+  and privacy pages. How I feel and Set a worry down are left out until the
+  lawyer has reviewed them.
 -->
 <style>
   :root {
     --canvas: #F6F1E2;
     --surface: #FFFFFF;
-    --surface-muted: #E2E8D6;
     --border: #E0DBC6;
-    --hairline: #ECE7D4;
     --ink: #2C3324;
     --caption: #4A5440;
     --accent: #3D5232;
@@ -30,9 +28,7 @@
     :root:not([data-theme="light"]) {
       --canvas: #1B2418;
       --surface: #232E1E;
-      --surface-muted: #2E3B27;
       --border: #3B4D33;
-      --hairline: #2E3B27;
       --ink: #F2ECD9;
       --caption: #CBD6BD;
       --accent: #B6C795;
@@ -44,9 +40,7 @@
   :root[data-theme="dark"] {
     --canvas: #1B2418;
     --surface: #232E1E;
-    --surface-muted: #2E3B27;
     --border: #3B4D33;
-    --hairline: #2E3B27;
     --ink: #F2ECD9;
     --caption: #CBD6BD;
     --accent: #B6C795;
@@ -67,125 +61,131 @@
   main {
     max-width: 760px;
     margin: 0 auto;
-    padding: 40px 16px 64px;
+    padding: 56px 16px 64px;
   }
 
-  header { margin-bottom: 32px; }
+  .hero {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .hero img {
+    width: 112px;
+    height: 112px;
+    border-radius: 26px;
+    display: block;
+    margin: 0 auto 20px;
+  }
 
   h1 {
-    font-size: 30px;
-    line-height: 1.2;
-    margin: 0 0 8px;
+    font-size: 44px;
+    line-height: 1.1;
+    margin: 0 0 12px;
   }
 
-  section {
+  .lead {
+    font-size: 20px;
+    margin: 0 auto 8px;
+    max-width: 30em;
+  }
+
+  .caption { color: var(--caption); font-size: 15px; }
+
+  .badge {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 600;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 20px;
-    margin-bottom: 20px;
   }
 
   h2 {
-    font-size: 20px;
-    margin: 0 0 12px;
+    font-size: 19px;
+    margin: 0 0 8px;
   }
-
-  h3 {
-    font-size: 17px;
-    margin: 20px 0 8px;
-  }
-
-  h3:first-of-type { margin-top: 0; }
 
   p { margin: 0 0 12px; }
   p:last-child { margin-bottom: 0; }
 
-  .caption { color: var(--caption); font-size: 15px; }
+  .note {
+    background: var(--open-wash);
+    border: 1px solid var(--open);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 32px;
+  }
 
   a {
     color: var(--accent);
     text-underline-offset: 2px;
   }
 
-  .open-block {
-    background: var(--open-wash);
-    border-color: var(--open);
+  footer {
+    text-align: center;
   }
 
-  ul.links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  ul.links li {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--hairline);
-  }
-
-  ul.links li:first-child { padding-top: 0; }
-  ul.links li:last-child { border-bottom: none; padding-bottom: 0; }
-
-  ul.links a { font-weight: 600; }
-
-  ul.links .caption { display: block; margin-top: 2px; }
-
-  mark.todo {
-    background: var(--open-wash);
-    color: var(--open);
-    border: 1px dashed var(--open);
-    border-radius: 4px;
-    padding: 0 4px;
+  footer nav a {
     font-weight: 600;
+    margin: 0 10px;
+    display: inline-block;
+    padding: 4px 0;
   }
 </style>
 </head>
 <body>
 <main>
 
-  <header>
+  <header class="hero">
+    <img src="/icon.png" alt="Michi's face: a round, smiling character with brown hair">
     <h1>Michi</h1>
-    <p class="caption">Michi means "path": a practice of wellness you return to every day. This page has help, contact details and the legal documents.</p>
+    <p class="lead">A small friend for the everyday.</p>
+    <p class="caption">Michi means "path": a practice you come back to each day.</p>
+    <span class="badge">Coming soon to the App Store</span>
   </header>
 
-  <section class="open-block">
-    <h2>Michi isn't for emergencies</h2>
-    <p>If you are in danger, or having thoughts of suicide or of hurting yourself, call 000 in Australia or your local emergency number.</p>
-    <p>In Australia, you can call Lifeline on 13&nbsp;11&nbsp;14 for free at any time. Michi's Me tab lists crisis lines for where you are.</p>
+  <section class="cards" aria-label="What's in Michi">
+    <div class="card">
+      <h2>Good things</h2>
+      <p>Write down what went well today. Read them back whenever you like.</p>
+    </div>
+    <div class="card">
+      <h2>Learn and practise</h2>
+      <p>Short lessons on everyday skills, like saying no. Guided meditations too.</p>
+    </div>
+    <div class="card">
+      <h2>Play</h2>
+      <p>Colour a picture, or scribble anything at all.</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Get in touch</h2>
-    <p>Email <a href="mailto:usefulthings.studio@gmail.com">usefulthings.studio@gmail.com</a>. Tell us which phone you use and what happened, and we'll get back to you.</p>
+  <section class="note">
+    <p><strong>Michi is a friend, not a doctor.</strong> If you are in danger, call 000 in Australia or your local emergency number. Lifeline is free on 13&nbsp;11&nbsp;14, at any time.</p>
   </section>
 
-  <section>
-    <h2>Common questions</h2>
-
-    <h3>How do I cancel the paid plan?</h3>
-    <p>Cancel in your phone's subscription settings. On iPhone, open Settings, tap your name, then Subscriptions. On Android, open Google Play and go to Payments and subscriptions. Deleting the app doesn't cancel the plan.</p>
-
-    <h3>I've paid, but Michi still shows a lock</h3>
-    <p>Tap the lock to open the plan screen, then tap Restore purchases. It works when your phone is signed in to the same Apple or Google account you paid with.</p>
-
-    <h3>How do I keep my things on a new phone?</h3>
-    <p>Before you switch, tap Create an account on the Me tab and confirm your email address with the code we send you. On the new phone, tap Create an account and use the same email address. Your good things, worries and colouring come with you.</p>
-    <p>Without an email address, your things belong to the old phone, and we can't move them for you.</p>
-
-    <h3>How do I get a copy of my things, or delete them?</h3>
-    <p>On the Me tab, tap Send me a copy of everything, or Delete everything. Deleting happens at once and can't be undone.</p>
-  </section>
-
-  <section>
-    <h2>The legal bits</h2>
-    <ul class="links">
-      <li><a href="/terms/">Terms and conditions</a><span class="caption">The agreement for using Michi and its paid plan.</span></li>
-      <li><a href="/privacy/">Privacy policy</a><span class="caption">What Michi keeps, where it goes and what you can do about it.</span></li>
-    </ul>
-  </section>
-
-  <p class="caption">Michi is made by Lizzie Teo in Australia.</p>
+  <footer>
+    <nav>
+      <a href="/support/">Help and contact</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+    <p class="caption">Made by Lizzie Teo in Australia.</p>
+  </footer>
 
 </main>
 </body>
